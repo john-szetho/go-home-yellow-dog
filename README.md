@@ -1,2 +1,2 @@
-# go-home-yellow-dog
-Go Home Yellow Dog
+# Go Home Yellow Dog
+Documenting incidents of Sinophobia during the COVID-19 outbreak.
