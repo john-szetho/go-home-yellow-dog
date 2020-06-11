@@ -8,93 +8,180 @@
     src: url(/fonts/texgyreheroscn-italic.otf);
 }
 
+@font-face {
+    font-family: 'texgyre-reg';
+    src: url(/fonts/texgyreheros-regular.otf);
+}
+
 body {
     font-family: 'texgyre', sans-serif;
     font-size: 1.6rem;
     line-height: 1.12;
-    color: #333333;
+    letter-spacing: -0.001rem;
+    color: #313131;
     background-color: #fede00;
 }
 
 body a {
     text-decoration: none;
-    color: #333333;
+    color: #313131;
+}
+
+body li a:hover {
+    opacity: 1;
+    font-family: 'texgyre-ital', sans-serif;
 }
 
 body h1 {
     font-size: 2.2rem;
+    font-family: 'texgyre-bold', sans-serif;
+    letter-spacing: -0.0145rem;
 }
 
-body p {
+body p,
+body li a {
     text-align: center;
-    letter-spacing: -0.001rem;
     color: #fede00;
 }
 
 body .text-small {
-    font-size: 0.8rem;
+    font-size: .95rem;
+    letter-spacing: 0.015rem;
 }
 
-.title span {
-    font-size: 1.4rem;
-    margin-left: .8rem;
-    letter-spacing: 0.095rem;
+body .caps {
+    text-transform: uppercase;
 }
 
 .container {
+    position: relative;
     background-image: url(/images/ghyd-image-1.png);
     background-size: cover;
     background-position: center center;
     width: 100vw;
     height: 100vh;
+    /* z-index: 50; */
 }
   
-.wrapper {
+.container .title span {
+    font-size: 1.45rem;
+    margin-left: 0.75rem;
+    letter-spacing: 0.185rem;
+}
+
+.container .wrapper {
     position: fixed;
     width: 100vh;
     top: 50vh;
     left: 50%;
     transform-origin: center center;
     transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+
     background-color: #fede00;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    box-shadow: #fede00 .5rem 0 1rem;
 
     display: flex;
-    height: 4rem;
+    height: 4.2rem;
     align-items: center;
+
+    z-index: 1000;
 }
 
-.primary-nav {
+.container .primary-nav {
     display: flex;
     width: 100vh;
     justify-content: space-between;
     align-items: baseline;
     padding: 0 1rem;
-    margin-bottom: .15rem;
+    /* margin-bottom: 0.1rem; */
 }
 
-.menu-toggle {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-}
-
-.open {
-    transform: translateX(-50%) translateY(-50%) rotate(270deg);
-}
-
-.menu {
-    transition: 0.8s;
-}
-
-.desc {
+.container .desc {
     position: absolute;
     width: calc(50vw - 2rem);
     right: 0;
     bottom: 0;
     padding: 1rem 3rem;
 }
+
+.container .links {
+    position: absolute;
+    width: calc(50vw - 2rem);
+    left: 0;
+    bottom: 0;
+    padding: 1rem 3rem;
+}
+
+/* POSITION: FIXED "Instagram" LINK */
+/* .container .links .pin {
+    position: fixed;
+    z-index: 1000;
+} */
+
+.container .links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Javascript Menu Toggle */
+.menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+.open {
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg) !important;
+}
+.menu {
+    transition: 0.8s;
+}
+/* End */
+
+.chapter {
+    position: relative;
+    height: 100%;
+    background-color: #f2f2f2;
+    line-height: 1.22;
+    /* z-index: 100; */
+}
+
+.chapter .article {
+    padding: 1.5rem 3rem;
+    height: 100%;
+    width: calc(50vw - .75rem);
+    /* color: #ff0000; */
+    /* color: #fede00; */
+}
+
+.chapter p {
+    text-align: left;
+    color: #313131;
+    font-size: 0.8rem;
+    text-indent: 4rem;
+}
+
+.chapter h2 {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    width: 4rem;
+}
+
+.chapter h3 {
+    display: inline-block;
+    margin-left: -0.4rem;
+    font-size: 1.2rem;
+    /* font-family: 'texgyre-ital'; */
+}
+
+.chapter img {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
