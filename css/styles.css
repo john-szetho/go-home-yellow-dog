@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'texgyre';
+    src: url(/fonts/texgyreheroscn-regular.otf);
+}
+
+@font-face {
+    font-family: 'texgyre-ital';
+    src: url(/fonts/texgyreheroscn-italic.otf);
+}
+
+body {
+    font-family: 'texgyre', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.12;
+    color: #333333;
+    background-color: #fede00;
+}
+
+body a {
+    text-decoration: none;
+    color: #333333;
+}
+
+body h1 {
+    font-size: 2.2rem;
+}
+
+body p {
+    text-align: center;
+    letter-spacing: -0.001rem;
+    color: #fede00;
+}
+
+body .text-small {
+    font-size: 0.8rem;
+}
+
+.title span {
+    font-size: 1.4rem;
+    margin-left: .8rem;
+    letter-spacing: 0.095rem;
+}
+
+.container {
+    background-image: url(/images/ghyd-image-1.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+  
+.wrapper {
+    position: fixed;
+    width: 100vh;
+    top: 50vh;
+    left: 50%;
+    transform-origin: center center;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    background-color: #fede00;
+    box-sizing: border-box;
+
+    display: flex;
+    height: 4rem;
+    align-items: center;
+}
+
+.primary-nav {
+    display: flex;
+    width: 100vh;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 1rem;
+    margin-bottom: .15rem;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.open {
+    transform: translateX(-50%) translateY(-50%) rotate(270deg);
+}
+
+.menu {
+    transition: 0.8s;
+}
+
+.desc {
+    position: absolute;
+    width: calc(50vw - 2rem);
+    right: 0;
+    bottom: 0;
+    padding: 1rem 3rem;
+}
