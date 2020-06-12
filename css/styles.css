@@ -47,12 +47,18 @@ body h1 {
 }
 
 body .text-small {
-    font-size: .95rem;
+    font-size: 0.95rem;
     letter-spacing: 0.015rem;
 }
 
 body .caps {
     text-transform: uppercase;
+}
+
+hr {
+    border-top: 1px solid rgba(32,33,36,.2);
+    filter: blur(3px);
+    transform: translateY(1rem);
 }
 
 .container {
@@ -138,10 +144,11 @@ body .caps {
 
 /* Javascript Menu Toggle */
 .menu-toggle {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     padding: 1rem;
+    z-index: 2000;
 }
 .open {
     transform: translateX(-50%) translateY(-50%) rotate(-90deg) !important;
@@ -151,12 +158,58 @@ body .caps {
 }
 /* End */
 
+.mast {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.mast.hero {
+    /* background-image: url(../images/mast/mast-image-5.jpg); */
+    /* background-attachment: inherit; */
+    position: relative;
+    background-color: #000000;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mast.hero h4 {
+    position: relative;
+    z-index: 1500;
+    background-color: #ff0000;
+}
+
+.mast.hero iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.mast.first {
+    background-image: url(../images/mast/mast-image-1.jpg);
+}
+
+.mast.second {
+    background-image: url(../images/mast/mast-image-4.jpg);
+    background-position-y: 50%;
+}
+
+/* .mast-split {
+    display: flex;
+    flex-direction: row;
+} */
+
 .chapter {
     position: relative;
     height: 100%;
     line-height: 1.22;
     display: flex;
     flex-direction: row;
+    background-color: #e4ddd3;
 }
 
 .chapter .article {
@@ -172,14 +225,12 @@ body .caps {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #ddd9d1;
 }
 
 .chapter .article.right {
     position: sticky;
     top: 0;
     left: calc(50vw + .75rem);
-    background-color: #ddd9d1;
 }
 
 .chapter p {
@@ -211,9 +262,10 @@ body .caps {
 }
 
 .chapter h2.s-title {
-    font-size: 1.4rem;
-    line-height: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 1;
     width: auto;
+    padding: 0 .25rem;
     /* max-width: 8rem; */
 }
 
