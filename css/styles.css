@@ -13,6 +13,11 @@
     src: url(/fonts/texgyreheros-regular.otf);
 }
 
+@font-face {
+    font-family: 'texgyre-bold';
+    src: url(/fonts/texgyreheroscn-bold.otf);
+}
+
 body {
     font-family: 'texgyre', sans-serif;
     font-size: 1.6rem;
@@ -34,8 +39,11 @@ body li a:hover {
 
 body h1 {
     font-size: 2.2rem;
-    font-family: 'texgyre-bold', sans-serif;
-    letter-spacing: -0.0145rem;
+    font-family: 'texgyre-reg', sans-serif;
+    letter-spacing: -0.025rem;
+    /* OPTION 2 */
+    /* font-family: 'texgyre', sans-serif;
+    letter-spacing: -0.007rem; */
 }
 
 body .text-small {
@@ -55,19 +63,14 @@ body .caps {
     width: 100vw;
     height: 100vh;
     border-bottom: solid #fede00 6px;
-    /* z-index: 50; */
+    box-shadow: 0 0.5px 5px 0 rgba(32,33,36,.2);
+    z-index: 98;
 }
 
 .container p,
 .container li a {
     text-align: center;
     color: #fede00;
-}
-  
-.container .title span {
-    font-size: 1.45rem;
-    margin-left: 0.75rem;
-    letter-spacing: 0.185rem;
 }
 
 .container .wrapper {
@@ -86,7 +89,7 @@ body .caps {
     height: 4.2rem;
     align-items: center;
 
-    z-index: 1000;
+    z-index: 99;
 }
 
 .container .primary-nav {
@@ -95,7 +98,13 @@ body .caps {
     justify-content: space-between;
     align-items: baseline;
     padding: 0 1rem;
-    /* margin-bottom: 0.1rem; */
+    margin-bottom: 0.25rem;
+}
+
+.container .primary-nav .title span {
+    font-size: 1.45rem;
+    margin-left: 0.75rem;
+    letter-spacing: 0.225rem;
 }
 
 .container .desc {
@@ -145,11 +154,9 @@ body .caps {
 .chapter {
     position: relative;
     height: 100%;
-    background-color: #f2f2f2;
     line-height: 1.22;
     display: flex;
     flex-direction: row;
-    /* z-index: 100; */
 }
 
 .chapter .article {
@@ -165,12 +172,14 @@ body .caps {
     position: sticky;
     top: 0;
     left: 0;
+    background-color: #ddd9d1;
 }
 
 .chapter .article.right {
     position: sticky;
     top: 0;
     left: calc(50vw + .75rem);
+    background-color: #ddd9d1;
 }
 
 .chapter p {
@@ -193,16 +202,19 @@ body .caps {
     justify-content: space-evenly;
     align-items: baseline;
     /* filter: blur(0.5px); */
+    margin-bottom: 20vh;
 }
 
 .chapter h2.s-title,
 .chapter h2.s-date {
-    /* width: auto; */
     text-align: center;
 }
 
 .chapter h2.s-title {
-    font-size: 0.95rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    width: auto;
+    /* max-width: 8rem; */
 }
 
 .chapter h3 {
@@ -221,8 +233,33 @@ body .caps {
 }
 
 footer {
+    position: relative;
     background-color: #fede00;
-    min-height: 30vh;
-    padding: .75rem 3rem;
-    font-size: 1.6rem;
+    min-height: 20vh;
+    padding: .5rem 3rem;
+    font-size: 0.7rem;
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 -1px 5px 0 rgba(32,33,36,.2);
+}
+
+footer h4 {
+    font-size: .6rem;
+    text-transform: uppercase;
+    margin-bottom: 0.1rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+footer ul li {
+    margin: 0 1rem 1rem 1rem;
+    /* max-width: 11rem; */
 }
