@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'texgyre';
-    src: url(/fonts/texgyreheroscn-regular.otf);
+    src: url(../fonts/texgyreheroscn-regular.otf);
 }
 
 @font-face {
     font-family: 'texgyre-ital';
-    src: url(/fonts/texgyreheroscn-italic.otf);
+    src: url(../fonts/texgyreheroscn-italic.otf);
 }
 
 @font-face {
     font-family: 'texgyre-reg';
-    src: url(/fonts/texgyreheros-regular.otf);
+    src: url(../fonts/texgyreheros-regular.otf);
 }
 
 @font-face {
     font-family: 'texgyre-bold';
-    src: url(/fonts/texgyreheroscn-bold.otf);
+    src: url(../fonts/texgyreheroscn-bold.otf);
 }
 
 body {
@@ -81,7 +81,7 @@ hr {
 
 .container {
     position: relative;
-    background-image: url(/images/ghyd-image-1.png);
+    background-image: url(../images/ghyd-image-1.png);
     background-size: cover;
     background-position: center center;
     width: 100vw;
