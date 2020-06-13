@@ -33,8 +33,13 @@ body a {
 }
 
 body li a:hover {
-    opacity: 1;
     font-family: 'texgyre-ital', sans-serif;
+    filter: blur(0.5px);
+}
+
+body a:hover {
+    opacity: .7;
+    filter: blur(1.5px);
 }
 
 body h1 {
@@ -53,6 +58,19 @@ body .text-small {
 
 body .caps {
     text-transform: uppercase;
+}
+
+body .ital {
+    font-family: 'texgyre-ital';
+}
+
+body .reg {
+    font-family: 'texgyre-reg';
+    letter-spacing: -0.015;
+}
+
+body .text-tiny {
+    font-size: 0.65rem;
 }
 
 hr {
@@ -77,6 +95,7 @@ hr {
 .container li a {
     text-align: center;
     color: #fede00;
+    filter: blur(0.25px);
 }
 
 .container .wrapper {
@@ -119,6 +138,10 @@ hr {
     right: 0;
     bottom: 0;
     padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .container .links {
@@ -158,27 +181,23 @@ hr {
 }
 /* End */
 
-.mast {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.masthead {
+    box-shadow: 0 1px 5px 0 rgba(32,33,36,.2);
+    z-index: 101;
 }
 
-.mast.hero {
-    /* background-image: url(../images/mast/mast-image-5.jpg); */
-    /* background-attachment: inherit; */
-    position: relative;
+.masthead .site-desc {
+    text-align: center;
     background-color: #000000;
-    z-index: 1000;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    color: #fede00;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-family: 'texgyre-reg';
+    filter: blur(0.5px);
 }
 
-.mast.hero h4 {
+.masthead h2 {
     position: relative;
     z-index: 1500;
     background-color: #ff0000;
@@ -195,7 +214,7 @@ hr {
 
 .mast.second {
     background-image: url(../images/mast/mast-image-4.jpg);
-    background-position-y: 50%;
+    background-position-y: 56%;
 }
 
 /* .mast-split {
@@ -203,17 +222,48 @@ hr {
     flex-direction: row;
 } */
 
+.mast {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.mast.hero {
+    /* background-image: url(../images/mast/mast-image-5.jpg); */
+    /* background-attachment: inherit; */
+    position: relative;
+    background-color: #000000;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mast.hero h2 {
+    padding: 0 1rem;
+}
+
+.mast.hero p {
+    background-color: #fede00;
+    padding-bottom: .5rem;
+}
+
 .chapter {
     position: relative;
-    height: 100%;
+    height: 200%;
     line-height: 1.22;
     display: flex;
     flex-direction: row;
     background-color: #e4ddd3;
+    z-index: 96;
 }
 
 .chapter .article {
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
     height: 100%;
     width: calc(50% - .75rem);
     /* color: #ff0000; */
@@ -252,7 +302,6 @@ hr {
     width: 100%;
     justify-content: space-evenly;
     align-items: baseline;
-    /* filter: blur(0.5px); */
     margin-bottom: 20vh;
 }
 
@@ -262,7 +311,9 @@ hr {
 }
 
 .chapter h2.s-title {
-    font-size: 1.6rem;
+    font-family: 'texgyre-reg';
+    letter-spacing: -0.025;
+    font-size: 1.4rem;
     line-height: 1;
     width: auto;
     padding: 0 .25rem;
@@ -273,7 +324,7 @@ hr {
     display: inline-block;
     margin-left: -0.4rem;
     font-size: 1.2rem;
-    /* font-family: 'texgyre-ital'; */
+    font-family: 'texgyre-ital';
 }
 
 .chapter img {
@@ -284,12 +335,25 @@ hr {
     object-position: center;
 }
 
+.article.statement {
+    position: relative;
+    background-color: #fede00;
+    z-index: 1500;
+    font-size: 2.2rem;
+    letter-spacing: -0.025rem;
+    padding-bottom: 0.25rem;
+    /* text-align-last: justify; */
+    /* text-transform: uppercase; */
+    box-shadow: 0 -1px 5px 0 rgba(32,33,36,.2);
+}
+
 footer {
     position: relative;
     background-color: #fede00;
     min-height: 20vh;
     padding: .5rem 3rem;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+    line-height: 1.22;
     z-index: 100;
     text-align: center;
     display: flex;
@@ -298,7 +362,7 @@ footer {
 }
 
 footer h4 {
-    font-size: .6rem;
+    font-size: .95rem;
     text-transform: uppercase;
     margin-bottom: 0.1rem;
 }
