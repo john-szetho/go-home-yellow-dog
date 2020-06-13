@@ -1,2 +1,4 @@
 # Go Home Yellow Dog
-Documenting incidents of sinophobia during the COVID-19 outbreak.
+An open source webzine documenting incidents of sinophobia during the COVID-19 crisis.
+
+http://gohomeyellowdog.club/
