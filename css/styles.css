@@ -305,10 +305,6 @@ hr {
     margin-bottom: 20vh;
 }
 
-.chapter h2.s-title {
-    /* filter: blur(0.5px); */
-}
-
 .chapter h2.s-title,
 .chapter h2.s-date {
     text-align: center;
