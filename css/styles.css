@@ -245,7 +245,7 @@ hr {
 
 .mast.hero p {
     background-color: #fede00;
-    padding-bottom: .5rem;
+    padding-bottom: .25rem;
 }
 
 .chapter {
@@ -348,30 +348,55 @@ footer {
     background-color: #fede00;
     min-height: 20vh;
     padding: .5rem 3rem;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     line-height: 1.22;
     z-index: 100;
     text-align: center;
     display: flex;
-    align-items: flex-end;
+    flex-wrap: wrap;
+
     box-shadow: 0 0px 5px 0 rgba(32,33,36,.1);
 }
 
+footer .contribute {
+    margin: 0.25rem auto;
+}
+
+footer .contribute-links {
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+}
+
+footer .contribute-links a {
+    margin: 0 .75rem 0 .75rem;
+    font-size: 0.8rem;
+}
+
+footer .heart {
+    margin-top: 0.15rem;
+    font-size: 1.2rem;
+}
+
 footer h4 {
-    font-size: .95rem;
+    font-size: .9rem;
+    letter-spacing: 0.015rem;
     text-transform: uppercase;
     margin-bottom: 0.1rem;
+}
+
+footer ul p {
+    font-size: 0.65rem;
 }
 
 footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-content: flex-end;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
 footer ul li {
-    margin: 0 1rem 1rem 1rem;
-    /* max-width: 11rem; */
+    margin: 0 .75rem .5rem .75rem;
 }
