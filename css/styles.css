@@ -246,6 +246,7 @@ hr {
 .mast.hero p {
     background-color: #fede00;
     padding-bottom: .25rem;
+    font-size: 1.4rem;
 }
 
 .chapter {
@@ -354,6 +355,7 @@ footer {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 
     box-shadow: 0 0px 5px 0 rgba(32,33,36,.1);
 }
