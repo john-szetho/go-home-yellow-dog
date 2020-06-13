@@ -13,11 +13,6 @@
     src: url(../fonts/texgyreheros-regular.otf);
 }
 
-@font-face {
-    font-family: 'texgyre-bold';
-    src: url(../fonts/texgyreheroscn-bold.otf);
-}
-
 body {
     font-family: 'texgyre', sans-serif;
     font-size: 1.6rem;
@@ -108,7 +103,7 @@ hr {
 
     background-color: #fede00;
     /* box-sizing: border-box; */
-    box-shadow: #fede00 .5rem 0 1rem;
+    box-shadow: #fede00 0 0 1rem;
 
     display: flex;
     height: 4.2rem;
@@ -241,6 +236,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 1px 5px 0 rgba(32,33,36,.1);
 }
 
 .mast.hero h2 {
@@ -344,7 +340,7 @@ hr {
     padding-bottom: 0.25rem;
     /* text-align-last: justify; */
     /* text-transform: uppercase; */
-    box-shadow: 0 -1px 5px 0 rgba(32,33,36,.2);
+    box-shadow: 0 0 5px 0 rgba(32,33,36,.1);
 }
 
 footer {
@@ -358,7 +354,7 @@ footer {
     text-align: center;
     display: flex;
     align-items: flex-end;
-    box-shadow: 0 -1px 5px 0 rgba(32,33,36,.2);
+    box-shadow: 0 0px 5px 0 rgba(32,33,36,.1);
 }
 
 footer h4 {
