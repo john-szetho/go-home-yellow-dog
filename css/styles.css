@@ -362,25 +362,26 @@ footer {
 
 footer .contribute {
     margin: 0.25rem auto;
+    font-size: 0.95rem;
+    letter-spacing: 0.015rem;
 }
 
 footer .contribute-links {
-    margin-top: .25rem;
     margin-bottom: 1rem;
 }
 
 footer .contribute-links a {
     margin: 0 .75rem 0 .75rem;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 footer .heart {
-    margin-top: 0.15rem;
+    margin-top: 0.2rem;
     font-size: 1.2rem;
 }
 
 footer h4 {
-    font-size: .9rem;
+    font-size: .85rem;
     letter-spacing: 0.015rem;
     text-transform: uppercase;
     margin-bottom: 0.1rem;
