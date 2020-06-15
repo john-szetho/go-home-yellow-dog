@@ -335,7 +335,12 @@ hr {
         position: static;
         width: auto;
         left: 0;
-        background-color: #707070;
+        background-color: #333333 !important;
+    }
+
+    .chapter .article.right,
+    .chapter .article.right p {
+        color: #d1d1d1 !important;
     }
 }
 
