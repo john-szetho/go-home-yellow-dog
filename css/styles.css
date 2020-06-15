@@ -342,6 +342,9 @@ hr {
     .chapter .article.right p {
         color: #d1d1d1 !important;
     }
+    .chapter .article.right img {
+        filter: invert(.85) !important;
+    }
 }
 
 .chapter p {
