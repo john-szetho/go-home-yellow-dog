@@ -162,6 +162,10 @@ hr {
     .container .desc {
         flex-wrap: wrap;
         padding: 1rem;
+        justify-content: center;
+    }
+    .container .desc p {
+        margin: 0 .25rem;
     }
     .container .links {
         flex-wrap: wrap;
@@ -169,12 +173,11 @@ hr {
     }
     .container .links ul {
         flex-wrap: wrap;
-        flex-direction: column;
         justify-content: center;
     }
-    /* .container .links ul li {
-        text-align: center;
-    } */
+    .container .links ul li {
+        margin: 0 .25rem;
+    }
 }
 
 /* Javascript Menu Toggle */
