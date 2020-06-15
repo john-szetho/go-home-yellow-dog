@@ -465,7 +465,7 @@ footer ul {
     letter-spacing: 0.009rem;
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:760px) {
     footer {
         padding: .25rem 1rem 0 1rem;
     }
