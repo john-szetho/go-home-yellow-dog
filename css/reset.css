@@ -136,3 +136,18 @@ input[type=button] {width: auto; overflow: visible;}
 
 /* let's clear some floats */
 .clearfix:after { content: " "; display: block; clear: both; }
+
+/* Video John Default */
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
