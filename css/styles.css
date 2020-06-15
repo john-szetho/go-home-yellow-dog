@@ -148,16 +148,29 @@ hr {
     text-align: left;
 }
 
-/* POSITION: FIXED "Instagram" LINK */
-/* .container .links .pin {
-    position: fixed;
-    z-index: 1000;
-} */
-
 .container .links ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (max-width:580px) {
+    .container .desc {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .container .links {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .container .links ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* .container .links ul li {
+        text-align: center;
+    } */
 }
 
 /* Javascript Menu Toggle */
@@ -269,44 +282,47 @@ hr {
     z-index: 96;
 }
 
-@media screen and (max-width:580px) {
-    .chapter .article.left {
-        width: 100vw;
-        height: 200vh;
-        left: 0;
-        position: static;
-    }
-    .chapter .article.right {
-        width: 100vw;
-        height: 200vh;
-        left: 0;
-        position: static;
-    }
-    .chapter {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
-
 .chapter .article {
     padding: 1rem 3rem;
     height: 100%;
     width: calc(50% - .75rem);
-    /* color: #ff0000; */
-    /* color: #fede00; */
     overflow-y: scroll;
 }
 
 .chapter .article.left {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
 }
 
 .chapter .article.right {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: calc(50vw + .75rem);
+}
+
+@media screen and (max-width:580px) {
+    .chapter {
+        display: block;
+        height: max-content;
+        position: relative;
+        z-index: 1500;
+    }
+    .chapter .article {
+        padding: 1rem 1rem;
+    }
+    .chapter .article.left {
+        position: static;
+        width: auto;
+        left: 0;
+    }
+    .chapter .article.right {
+        position: static;
+        width: auto;
+        left: 0;
+    }
 }
 
 .chapter p {
