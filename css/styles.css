@@ -247,8 +247,8 @@ hr {
 
 /* NO BLUR ON MOBILE */
 @media screen and (max-width:580px) {
-    .container .desc,
-    .container .links a,
+    .container p,
+    .container li a,
     .masthead .site-desc {
         filter: blur(0) !important;
     }
